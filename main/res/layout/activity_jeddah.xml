@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".jeddahActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="85dp"
+        android:background="@drawable/jeedah"
+        android:text=""
+        android:textColor="#FAFAFA"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/coffimage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/coffimage"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="259dp"
+        android:onClick="moveTocoff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/shopimage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/coff" />
+
+    <ImageView
+        android:id="@+id/foodimage"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginBottom="68dp"
+        android:onClick="moveTofood"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/shopimage"
+        app:srcCompat="@drawable/food" />
+
+    <ImageView
+        android:id="@+id/shopimage"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginEnd="55dp"
+        android:onClick="moveToshop"
+        app:layout_constraintBottom_toBottomOf="@+id/coffimage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/coffimage"
+        app:layout_constraintTop_toTopOf="@+id/coffimage"
+        app:srcCompat="@drawable/shop" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="22dp"
+        android:text="Explore now Jeddah"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/shopimage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="20dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorBlack"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:text="Update password"/>
+<EditText
+    android:id="@+id/passwordE"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="Current Password"
+    android:inputType="textPassword"/>
+    <EditText
+        android:id="@+id/NewPasswordE"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="New Password"
+        android:inputType="textPassword"/>
+    <Button
+        android:id="@+id/updatePasswordBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update password"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_gravity="center_horizontal"/>
+</LinearLayout>
